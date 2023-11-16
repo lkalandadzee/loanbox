@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+
+        <style>
+            #not {
+                color: rgb(118, 100, 190);
+                font-size: 30px;
+                text-align: center;
+                margin-top: 15px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                
+            }
+            #yes {
+                animation: fade-in-out 2s;
+                position: absolute;
+                top: 900px;
+                margin-left: 100px;
+                width: 900px;
+                border-radius: 50px 50px;
+                
+            }
+
+            #body {
+                background-image:url(../loanbox-background.jpg);
+                background-size: 1550px;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+            }
+            #poc {
+                animation: fade-in-out 2s;
+                font-size: 50px;
+                position: absolute;
+                top: 2500px;
+                right: 100px;
+                color: rgb(25, 25, 134);
+            }
+            #sia {
+                animation: fade-in-out 2s;
+                font-size: 45px;
+                position: absolute;
+                right: 130px;
+                top: 2600px;
+                color: rgba(25, 25, 134, 0.475);
+            }
+            #id {
+                border-radius: 50px 50px;
+                animation: fade-in-out 2s;
+                width: 405px;
+                position: absolute;
+                left: 100px;
+                top: 2500px;
+                
+            }
+            #stat {
+
+                border-radius: 50px 50px;
+                animation: fade-in-out 2s;
+                width: 405px;
+                position: absolute;
+                left: 550px;
+                top: 2500px;
+            }
+            
+            
+            #loan {
+                width: 700px;
+                right: 50px;
+                top: 1800px;
+                position: absolute;
+                animation: fade-in-out 2s;
+                border-radius: 50px 50px;
+            }
+            .font {
+                animation: fade-in-out 2s ;
+                color: rgb(25, 25, 134);
+                text-align: center;
+                font-size: 100px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            @keyframes fade-in-out {
+                from {
+                    opacity: 0;
+                }
+            }
+            .pp {
+                animation: fade-in-out 2s;
+                color: rgba(25, 25, 134, 0.475);
+                position: absolute;
+                left: 550px;
+                top: 425px;
+                font-size: 30px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+
+            .about {
+                animation: fade-in-out 2s;
+                position: absolute;
+                top: 550px;
+                margin-left: 45px;
+                color: rgba(255, 255, 255, 0.908);
+                font-size: 25px;
+                font-family: Arial, Helvetica, sans-serif;
+                
+            
+            }
+            .square {
+                animation: fade-in-out 2s;
+                height: 50px;
+                width: 200px;
+                background-color:rgb(22, 22, 183);
+                border-radius: 50px 50px;
+                margin-left: 500px;
+                margin-top: 172.5px;
+
+            }
+            .Video {
+                animation: fade-in-out 2s;
+                position: absolute;
+                top: 550px;
+                margin-left: 20px;
+                color: rgba(255, 255, 255, 0.908);
+                font-size: 25px;
+                font-family: Arial, Helvetica, sans-serif;
+                
+            }
+            .squar {
+                animation: fade-in-out 2s;
+                height: 50px;
+                width: 200px;
+                background-color:rgb(22, 22, 183);
+                border-radius: 50px 50px;
+                margin-left: 750px;
+                margin-top: -50px;
+            }
+            .agwera {
+                animation: fade-in-out 2s ;
+                color: rgb(25, 25, 134);
+                position: absolute;
+                right: 100px;
+                font-size: 50px;
+                top: 1000px;
+
+            }
+            .zogadi {
+                animation: fade-in-out 2s;
+                font-size: 35px;
+                position: absolute;
+                right: 100px;
+                top: 1100px;
+                color: rgba(25, 25, 134, 0.475);
+            }
+            .vistvis {
+                animation: fade-in-out 2s ;
+                color: rgb(25, 25, 134);
+                position: absolute;
+                left: 100px;
+                font-size: 80px;
+                top: 1780px;
+            }
+            .aris {
+                animation: fade-in-out 2s;
+                font-size: 45px;
+                position: absolute;
+                left: 130px;
+                top: 1900px;
+                color: rgba(25, 25, 134, 0.475);
+
+            }
+            #not1 {
+                
+            color: rgb(118, 100, 190);
+                font-size: 30px;
+                text-align: center;
+                
+                margin-top: 1000px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            #cont {
+                
+                color: rgba(25, 25, 134, 0.475);
+                font-size: 25px;
+                position: absolute;
+                margin-left: 300px;
+                margin-top: -55px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            #return {
+                
+                color: rgba(25, 25, 134, 0.475);
+                font-size: 25px;
+                position: absolute;
+                margin-left: 1100px;
+                margin-top: -55px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            .square2 {
+                animation: fade-in-out 2s;
+                height: 75px;
+                width: 1500px;
+                background-color:rgb(218, 218, 227);
+                border-radius: 50px 50px;
+                top: 1100px;
+                padding-top: 800px;
+                margin-top: 200px;
+            }
+            .square3 {
+                animation: fade-in-out 2s;
+                height: 75px;
+                width: 1500px;
+                background-color:rgb(218, 218, 227);
+                border-radius: 50px 50px;
+                top: 1100px;
+                padding-top: 500px;
+                margin-top: 750px;
+            }
+            .finish {
+                
+                height: 75px;
+                width: 1500px;
+                background-color:rgb(218, 218, 227);
+                border-radius: 50px 50px;
+                margin-top: -75px;
+                
+            }
+            .goal {
+                animation: fade-in-out 2s ;
+                color: rgb(25, 25, 134);
+                position: absolute;
+                left: 150px;
+                font-size: 75px;
+                top: 3150px;
+            }
+            .real {
+                animation: fade-in-out 2s;
+                font-size: 35px;
+                position: absolute;
+                left: 100px;
+                top: 3300px;
+                color: rgba(25, 25, 134, 0.475);
+            }
+            #goal_photo {
+                animation: fade-in-out 2s;
+                border-radius: 50px 50px;
+                position: absolute;
+                top: 3150px;
+                right: 50px;
+                width: 800px;
+            }
+            .problems {
+                animation: fade-in-out 2s ;
+                color: rgb(25, 25, 134);
+                position: absolute;
+                right: 100px;
+                font-size: 50px;
+                top: 3850px;
+            }
+
+            .square4 {
+                animation: fade-in-out 2s;
+                background-color:rgb(218, 218, 227);
+                border-radius: 50px 50px;
+                padding-top: 500px;
+                margin-top: 750px;
+            
+            }
+            .problems1 {
+                animation: fade-in-out 2s;
+                font-size: 35px;
+                position: absolute;
+                right: 150px;
+                top: 3950px;
+                color: rgba(25, 25, 134, 0.475);
+            }
+            
+            #Debt {
+                border-radius: 50px 50px;
+                animation: fade-in-out 2s;
+                position: absolute;
+                left: 80px;
+                top: 3850px;
+                width: 600px;
+            }
+            .CEO {
+                animation: fade-in-out 2s ;
+                color: rgb(25, 25, 134);
+                position: absolute;
+                left: 150px;
+                font-size: 75px;
+                top: 4350px;
+            }
+            .ME {
+                animation: fade-in-out 2s;
+                font-size: 45px;
+                position: absolute;
+                right: 300px;
+                top: 4650px;
+                color: rgba(25, 25, 134, 0.475);
+            }
+            #CEO-PHOTO {
+                animation: fade-in-out 2s;
+                border-radius: 50px 50px;
+                width: 350px;
+                position: absolute;
+                left: 100px;
+                top: 4600px;
+            }
+            
+            .img :hover{
+                transform: scale(1.05);
+                z-index: 2;
+                transition: 0.5s;
+            }
+           
+            .square :hover{
+                transform: scale(1.15);
+                z-index: 2;
+                transition: 0.5s;
+            }
+            .squar :hover{
+                transform: scale(1.15);
+                z-index: 2;
+                transition: 0.5s;
+            }
+            .links {
+                text-decoration: none;
+            }
+            .links :hover{
+                transform: scale(1.1);
+                z-index: 2;
+                transition: 0.5s;
+            }
+        
+
+        </style>
+    </head>
+    
+    <body id="body">
+        
+        
+        <a class="links" href="C:\Users\ლევანი\Desktop\LoanBox\LoanBox.html"><h1 id="not">
+            LoanBox
+        </h1></a>
+        
+        <h1 class="font">We ensure <br>people's well-being</h1>
+        <P class="pp">LoanBox offers you an easy Loan</P>
+
+      <a href="C:\Users\ლევანი\Desktop\LoanBox\AboutUs.html"><div class="square"><h2 class="about">About Us</h2></div></a>
+      <a href="C:\Users\ლევანი\Desktop\LoanBox\Tutorial.html"><div class="squar"><h2 class="Video">Tutorial Video</h2></div></a>
+
+
+        <div class="square2">
+            <div class="img"><img id="yes" src="C:\Users\ლევანი\Desktop\LoanBox Photos\Untitled.png"></div>
+        <h1 class="agwera">Short Description</h1>
+        <p class="zogadi">A device that allows you<br> to take a quick loan<br> for a specified period and<br> return the money with a<br> certain interest.</p></div>
+
+       
+            <h1 class="vistvis">Who is it for?</h1>
+            <p class="aris">For people who need<br> the financial support<br> in a short time.</p>
+        
+        
+        <div class="img"><img id="loan" src="C:\Users\ლევანი\Desktop\LoanBox Photos\LoanReject.png"></div>
+
+
+        <div class="square3"><h2 id="poc">Required documents</h2></div>
+
+        <div class="img"><img id="id" src="C:\Users\ლევანი\Desktop\LoanBox Photos\id.png"></div>
+        
+       <div class="img"><img id="stat" src="C:\Users\ლევანი\Desktop\LoanBox Photos\income.png"></div>
+        
+
+        <ul id="sia">
+            <li>ID card</li>
+            <li>Income statement</li>
+        </ul>
+
+        <h1 class="goal">Goal</h1>       
+        <p class="real">To become one of the<br>leading companies in the world,<br> which will provide financial support<br>to billions of people.</p>
+        <div class="img"><img id="goal_photo" src="C:\Users\ლევანი\Desktop\LoanBox Photos\Goal.webp"></div>
+
+        <div class="square4"><h1 class="problems">Problems that LoanBox will solve</h1>
+        <ul class="problems1">
+            <li>
+                Financial Problems
+            </li>
+            <li>
+                Difficult loan
+            </li>
+            <li>
+                Queues at the bank
+            </li>
+        </ul>
+    <div class="img"><img id="Debt" src="C:\Users\ლევანი\Desktop\LoanBox Photos\Debt.jpg"></div>
+    </div>
+
+    <h1 class="CEO">CEO</h1>
+    <p class="ME">The idea of ​​creating "LoanBox"<br>belongs to Levan Kalandadze,<br> who himself founded the company<br> and created its own website.</p>
+    <div class="img"><img id="CEO-PHOTO" src="C:\Users\ლევანი\Desktop\LoanBox Photos\CEO.webp"></div>
+
+       <a class="links" href="C:\Users\ლევანი\Desktop\LoanBox\LoanBox.html"><h1 id="not1">LoanBox</h1></a>
+       <a class="links" href="C:\Users\ლევანი\Desktop\LoanBox\Contact.html"> <h3 id="cont">Contact</h3></a>
+       <a class="links" href="C:\Users\ლევანი\Desktop\LoanBox\LoanBox.html"> <h3 id="return">Home Page</h3></a>
+        <div class="finish"></div>
+        
+        
+
+
+    </body>
+</html>
